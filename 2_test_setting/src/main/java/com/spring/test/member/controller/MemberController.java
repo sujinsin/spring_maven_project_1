@@ -82,5 +82,10 @@ public class MemberController {
 			throw new MemberException("로그인에 실패하였습니다");
 		}
 	}
+	
+	@RequestMapping("myinfo.me")
+	public String myinfo() {
+		return "mypage";
+	}
 
 }
