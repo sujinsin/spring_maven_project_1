@@ -6,13 +6,10 @@
 		<setting name="jdbcTypeForNull" value="NULL"/>
 	</settings>
     <typeAliases>
-       <typeAlias type="com.spring.test.member.model.vo.Member" alias="Member"/>
-<!--        <typeAlias type="com.kh.spring.board.model.vo.Board" alias="Board" />
-       <typeAlias type="com.kh.spring.board.model.vo.Reply" alias="Reply"/> -->
+    	<package name="com.spring.test.member.model.vo"/>
     </typeAliases>
    
     <mappers>
        <mapper resource="mappers/member-mapper.xml"/>
-<!--        <mapper resource="mappers/board-mapper.xml"/> -->
     </mappers>
 </configuration>
